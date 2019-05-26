@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Taraplantwatcher</title>
+
+	<style>
+		/* RESET START*/
+		<%- include('cssreset.css') %>
+		/* RESET START*/
+
+		html, body{
+
+		}
+
+
+		#body_wrapper{
+			height:100%;
+			width:100%;
+			background-color: red;
+		}
+
+		#content_wrapper{
+			width:100%;
+			background-color: cyan;
+			/*padding-top:50px;*/
+			margin:0px auto;
+		}
+
+		.main_image_holder{
+			display: block;
+			/*width:640px;*/
+			margin:0px auto;
+		}
+		#viewer_controls{
+			/*width:640px;*/
+			margin:0px auto;
+		}
+		#controls button{
+			padding: 30px;
+		}
+		#debug{
+			position:fixed;
+			background-color: white;
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: 0;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+	<div id="body_wrapper">
+		<div id="content_wrapper">
+
+			<div id="viewer_container" class="main_image_holder">
+			</div>
+			<div id="viewer_controls">
+			</div>
+			
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+	<%- include('../public/imageviewer_3.js') %>
+	</script>
+
+</body>
+</html>

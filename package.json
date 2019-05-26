@@ -1,0 +1,16 @@
+{
+  "name": "taraplantwatcher",
+  "version": "1.0.0",
+  "description": "site to view the snaps taken by the pi timelapse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gavin",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.224.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
